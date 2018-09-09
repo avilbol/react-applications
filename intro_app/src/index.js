@@ -6,7 +6,8 @@ var ReactDOM = require('react-dom');
 // element of type h1 with content 'Hello World' which will eventually spit out
 // heading onto the webpage
 
-var App = React.createElement('h1', null, 'Hello World');
+//var App = React.createElement('h1', null, 'Hello World');
+var App = <h1>Hello World</h1>
 
 // We need to somehow tell react to take our React element(App) and display it
 // on the webpage using DOM
