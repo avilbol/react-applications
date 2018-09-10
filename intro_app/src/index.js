@@ -10,7 +10,7 @@ var ReactDOM = require('react-dom');
 // React.createElement(type, attrs/props, ...children);
 //var App = React.createElement('h1', null, 'Hello World');
 var app = <h1>Hello World</h1>
-var Component = function(){
+var component = function(){
   return(
     <h1>Hello World</h1>
   );
@@ -21,10 +21,10 @@ var Component = function(){
 // on the webpage using DOM
 //ReactDOM.render([What], [Where])
 
-ReactDOM.render(
-  app,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   app,
+//   document.getElementById('root')
+// );
 
 // ReactDOM.render(
 //   React.createElement(Component),
@@ -36,7 +36,7 @@ ReactDOM.render(
 //   document.getElementById('root')
 // );
 
-// ReactDOM.render(
-//   <Component />,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <component />,
+  document.getElementById('root')
+);
