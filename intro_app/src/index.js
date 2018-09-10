@@ -20,11 +20,23 @@ var Component = function(){
 // We need to somehow tell react to take our React element(App) and display it
 // on the webpage using DOM
 //ReactDOM.render([What], [Where])
+
 // ReactDOM.render(
 //   App,
 //   document.getElementById('root')
 // );
+
+// ReactDOM.render(
+//   React.createElement(Component),
+//   document.getElementById('root')
+// );
+
+// ReactDOM.render(
+//   <Component></Component>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  React.createElement(Component),
+  <Component />,
   document.getElementById('root')
 );
