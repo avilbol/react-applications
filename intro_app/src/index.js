@@ -9,10 +9,11 @@ var ReactDOM = require('react-dom');
 // React.createElement(type, attrs/props, child1, child2, child3, ...);
 // React.createElement(type, attrs/props, ...children);
 //var App = React.createElement('h1', null, 'Hello World');
-var app = <h1>Hello World</h1>
-var component = function(){
+// var app = <h1>Hello World</h1>
+
+var Component = function(greeting){
   return(
-    <h1>Hello World</h1>
+    <h1>greeting</h1>
   );
 };
 
@@ -22,21 +23,11 @@ var component = function(){
 //ReactDOM.render([What], [Where])
 
 // ReactDOM.render(
-//   app,
-//   document.getElementById('root')
-// );
-
-// ReactDOM.render(
 //   React.createElement(Component),
 //   document.getElementById('root')
 // );
 
-// ReactDOM.render(
-//   <Component></Component>,
-//   document.getElementById('root')
-// );
-
 ReactDOM.render(
-  React.createElement(component),
+  <Component />,
   document.getElementById('root')
 );
