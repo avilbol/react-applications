@@ -12,8 +12,13 @@ var ReactDOM = require('react-dom');
 // var app = <h1>Hello World</h1>
 
 var Component = function(props){
+  var style = {
+    color : props.color
+  };
   return(
-    <h1>{props.greeting}</h1>
+    <div style={style}>
+      <h1>{props.greeting}</h1>
+    </div>
   );
 };
 
@@ -28,6 +33,6 @@ var Component = function(props){
 // );
 
 ReactDOM.render(
-  <Component greeting="Hey there" />,
+  <Component greeting="Hey there" color="green"/>,
   document.getElementById('root')
 );
