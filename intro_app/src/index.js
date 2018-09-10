@@ -11,9 +11,10 @@ var ReactDOM = require('react-dom');
 //var App = React.createElement('h1', null, 'Hello World');
 // var app = <h1>Hello World</h1>
 
-var Component = function(greeting){
+var Component = function(props){
+  console.log(props);
   return(
-    <h1>greeting</h1>
+    <h1></h1>
   );
 };
 
@@ -28,6 +29,6 @@ var Component = function(greeting){
 // );
 
 ReactDOM.render(
-  <Component />,
+  <Component greeting="Hello World" />,
   document.getElementById('root')
 );
