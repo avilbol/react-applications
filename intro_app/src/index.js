@@ -37,6 +37,6 @@ var component = function(){
 // );
 
 ReactDOM.render(
-  <component />,
+  <component />, // React.createElement('component')
   document.getElementById('root')
 );
