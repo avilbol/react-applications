@@ -12,11 +12,8 @@ var ReactDOM = require('react-dom');
 // var app = <h1>Hello World</h1>
 
 var Component = function(props){
-  var style = {
-    color : props.color
-  };
   return(
-    <div style={style}>
+    <div style={ { color : props.color } }>
       <h1>{props.greeting}</h1>
     </div>
   );
