@@ -13,7 +13,9 @@ var createClass = require('create-react-class');
 // npm i -S create-react-class
 
 var Component = createClass({
+  render : function(){
 
+  }
 });
 
 ReactDOM.render(
