@@ -2,11 +2,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 //<h1>Hello World</h1>
-// <ul>
-//   <li>Apple</li>
-//   <li>Strawberry</li>
-//   <li>Orange</li>
-// <ul>
 // In react if we want to do the same thing, we first need to create a react
 // element of type h1 with content 'Hello World' which will eventually spit out
 // heading onto the webpage
@@ -14,19 +9,22 @@ var ReactDOM = require('react-dom');
 // React.createElement(type, attrs/props, child1, child2, child3, ...);
 // React.createElement(type, attrs/props, ...children);
 //var App = React.createElement('h1', null, 'Hello World');
-//var App = <h1>Hello World</h1>
-var App = (
-    <ul>
-      <li>Apple</li>
-      <li>Strawberry</li>
-      <li>Orange</li>
-    </ul>
-);
+var App = <h1>Hello World</h1>
+var Component = function(){
+  return(
+    <h1>Hello World</h1>
+  );
+};
+
 
 // We need to somehow tell react to take our React element(App) and display it
 // on the webpage using DOM
 //ReactDOM.render([What], [Where])
+// ReactDOM.render(
+//   App,
+//   document.getElementById('root')
+// );
 ReactDOM.render(
-  App,
+  React.createElement(Component),
   document.getElementById('root')
 );
